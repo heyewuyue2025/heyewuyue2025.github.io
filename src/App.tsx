@@ -155,9 +155,6 @@ function App() {
 
           <motion.section id="ai-works" className="content-section" {...motionProps}>
             <SectionTitle id="ai-works" label="AI Works" title="AI 作品" />
-            <p className="section-intro">
-              这里是网站的主展区。每个条目都保留媒介、工具、制作过程与输出形态，方便之后替换为真实作品页面、视频、图像集或交互原型。
-            </p>
             <div className="work-list">
               {aiWorks.map((work, index) => (
                 <article
