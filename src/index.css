@@ -40,6 +40,7 @@
   --highlight-font: 'RyanRuishou', 'RyanSumei', 'Noto Sans SC', sans-serif;
   --script: 'Cormorant Garamond', Georgia, serif;
   --mono: 'IBM Plex Mono', 'Cascadia Mono', monospace;
+  --anchor-offset: 92px;
   color: var(--ink);
   background: var(--paper);
   font-family: var(--sans);
@@ -57,6 +58,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--anchor-offset);
 }
 
 body {
@@ -341,6 +343,7 @@ p {
 }
 
 .intro-section {
+  scroll-margin-top: var(--anchor-offset);
   padding-bottom: 42px;
   border-bottom: 1px solid var(--line);
 }
@@ -422,6 +425,7 @@ p {
 }
 
 .content-section {
+  scroll-margin-top: var(--anchor-offset);
   padding: 42px 0;
   border-bottom: 1px solid var(--line);
 }
@@ -843,6 +847,10 @@ p {
 }
 
 @media (max-width: 900px) {
+  :root {
+    --anchor-offset: 24px;
+  }
+
   .topbar {
     position: relative;
     align-items: flex-start;
