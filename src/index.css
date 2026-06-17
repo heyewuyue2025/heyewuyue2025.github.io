@@ -172,7 +172,7 @@ p {
   gap: 50px;
   width: min(1120px, calc(100% - 42px));
   margin: 0 auto;
-  padding: 46px 0 64px;
+  padding: 46px 0 min(46vh, 460px);
 }
 
 .profile-column {
@@ -864,6 +864,7 @@ p {
   .page-grid {
     grid-template-columns: 1fr;
     gap: 34px;
+    padding-bottom: 72px;
   }
 
   .profile-column {
