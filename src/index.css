@@ -40,7 +40,7 @@
   --highlight-font: 'RyanRuishou', 'RyanSumei', 'Noto Sans SC', sans-serif;
   --script: 'Cormorant Garamond', Georgia, serif;
   --mono: 'IBM Plex Mono', 'Cascadia Mono', monospace;
-  --anchor-offset: 92px;
+  --anchor-offset: 76px;
   color: var(--ink);
   background: var(--paper);
   font-family: var(--sans);
@@ -58,7 +58,6 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: var(--anchor-offset);
 }
 
 body {
